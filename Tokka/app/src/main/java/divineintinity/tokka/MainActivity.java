@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int PLACE_PICKER_REQUEST = 1000;
     private GoogleApiClient mClient;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mClient = new GoogleApiClient.Builder(this).addApi(Places.GEO_DATA_API).addApi(Places.PLACE_DETECTION_API).build();
+        textView = (TextView) findViewById(R.id.textView);
 
         Button btn = (Button) findViewById(R.id.btnSelectLocation);
         btn.setOnClickListener(new View.OnClickListener() {

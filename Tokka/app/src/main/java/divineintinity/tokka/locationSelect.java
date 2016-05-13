@@ -1,7 +1,7 @@
 package divineintinity.tokka;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class locationSelect extends AppCompatActivity {
 
@@ -10,4 +10,5 @@ public class locationSelect extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location_select);
     }
+
 }
