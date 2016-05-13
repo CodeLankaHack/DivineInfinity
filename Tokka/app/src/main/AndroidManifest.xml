@@ -21,6 +21,12 @@
         </activity>
         <activity android:name=".locationSelect"
             android:parentActivityName=".MainActivity"></activity>
+
+     //API Keys for the google API
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDNOZXyDztGGeSaJvPHGGRpTxVR0Oj27U0"/>
+
     </application>
 
 </manifest>
