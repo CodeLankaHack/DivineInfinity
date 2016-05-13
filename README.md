@@ -5,4 +5,4 @@
 <strong>Tokka is a mobile application which takes the personal time management tools to the next level. It allows user to get notifications and alarms by their geographical location.</strong>
 
 ---------Youtube Video------ <br>
-https://www.youtube.com/watch?v=gZlGNcdh9DU&feature=youtu.be
+https://youtu.be/gZlGNcdh9DU
