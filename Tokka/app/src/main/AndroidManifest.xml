@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="divineintinity.tokka">
 
+    //Permissions needed for the Location API and Notification Service
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -27,7 +28,11 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDNOZXyDztGGeSaJvPHGGRpTxVR0Oj27U0"/>
-
+     
+        <service android:name="AlarmService" android:enabled="true"/>
+        
+        
+        
     </application>
 
 </manifest>
