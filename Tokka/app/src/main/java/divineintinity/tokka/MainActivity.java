@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mClient = new GoogleApiClient.Builder(this).addApi(Places.GEO_DATA_API).addApi(Places.PLACE_DETECTION_API).build();
-        textView = (TextView) findViewById(R.id.textView);
+        textView = (TextView) findViewById(R.id.locationName);
 
         Button btn = (Button) findViewById(R.id.btnSelectLocation);
         btn.setOnClickListener(new View.OnClickListener() {

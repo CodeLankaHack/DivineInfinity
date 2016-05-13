@@ -9,21 +9,64 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="divineintinity.tokka.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Location"
-        android:id="@+id/btnSelectLocation"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="89dp"
-        android:onClick="selectLocation"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/btnSelectLocation" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|right|top|bottom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Configure Notifications"
+            android:id="@+id/txtTitle"
+            android:layout_below="@+id/btnSelectLocation"
+            android:layout_alignEnd="@+id/locationName"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_marginTop="50dp"
+            android:hint="Activity Name" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Location"
+            android:id="@+id/btnSelectLocation"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:onClick="selectLocation"
+            android:layout_gravity="center_horizontal"
+            android:padding="25dp"
+            android:background="#3ed0d5" />
+
+        <TextView
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationName"
+            android:layout_alignStart="@+id/btnSelectLocation"
+            android:layout_weight="0.03"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:text="Set Notification"
+            android:id="@+id/setAlarm"
+            android:layout_gravity="center_horizontal"
+            android:background="#e9e328"
+            android:layout_marginTop="100dp" />
+
+    </LinearLayout>
 </RelativeLayout>
